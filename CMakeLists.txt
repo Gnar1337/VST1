@@ -43,15 +43,7 @@ target_link_libraries(${target}
 )
 
 if(SMTG_MAC)
-    smtg_target_set_bundle(${target}
-        BUNDLE_IDENTIFIER com.steinberg.vst3.midinotedisplay
-        COMPANY_NAME "Steinberg"
-    )
     smtg_target_codesign(${target}
         IDENTITY "-"
-    )
-elseif(SMTG_WIN)
-    target_sources(${target} PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/resource/MidiNoteDisplay.rc
     )
 endif(SMTG_MAC)
