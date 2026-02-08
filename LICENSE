@@ -1,0 +1,19 @@
+This project uses the Steinberg VST3 SDK, which is subject to the Steinberg VST3 License.
+
+The VST3 SDK is licensed under the following terms:
+
+---
+
+The VST 3 SDK is:
+(c) 2024, Steinberg Media Technologies GmbH, All Rights Reserved
+
+This license applies only to files in the "vst3sdk" folder (submodule).
+
+The MIDI Note Display plugin code (in the "source" folder) is provided as an example 
+and can be freely used, modified, and distributed.
+
+For the complete VST3 SDK license, see:
+vst3sdk/LICENSE.txt
+
+For more information about VST3 licensing:
+https://steinbergmedia.github.io/vst3_dev_portal/pages/What+is+the+VST+3+SDK/Index.html
