@@ -1,0 +1,43 @@
+{
+  "Name": "MidiNoteDisplay",
+  "Version": "1.0.0",
+  "Factory Info": {
+    "Vendor": "Steinberg Media Technologies",
+    "URL": "https://www.steinberg.net",
+    "E-Mail": "mailto:info@steinberg.de",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "A9B2C3D4E5F60718293A4B5C6D7E8F90",
+      "Category": "Audio Module Class",
+      "Name": "MIDI Note Display",
+      "Vendor": "Steinberg Media Technologies",
+      "Version": "1.0.0.1",
+      "SDKVersion": "VST 3.8.0",
+      "Sub Categories": [
+        "Fx",
+      ],
+      "Class Flags": 1,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "1A2B3C4D5E6F708192A3B4C5D6E7F890",
+      "Category": "Component Controller Class",
+      "Name": "MIDI Note DisplayController",
+      "Vendor": "Steinberg Media Technologies",
+      "Version": "1.0.0.1",
+      "SDKVersion": "VST 3.8.0",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}

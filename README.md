@@ -78,6 +78,8 @@ MIDI Note ON  - Note: 64, Velocity: 0.85, Channel: 0
 MIDI Note OFF - Note: 64, Velocity: 0.50, Channel: 0
 ```
 
+For more details and troubleshooting, see [EXAMPLE_OUTPUT.md](EXAMPLE_OUTPUT.md).
+
 ## License
 
 This project uses the Steinberg VST3 SDK, which is licensed under the Steinberg VST3 License.
