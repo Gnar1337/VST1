@@ -44,16 +44,16 @@ tresult PLUGIN_API MidiNoteDisplayProcessor::setActive(TBool state)
     return AudioEffect::setActive(state);
 }
 
-void MidiNoteDisplayProcessor::processMidiEvent(const Event& event)
+void MidiNoteDisplayProcessor::processMidiEvent(const Vst::Event& event)
 {
-    if (event.type == Event::kNoteOnEvent)
+    if (event.type == Vst::Event::kNoteOnEvent)
     {
         printf("MIDI Note ON  - Note: %d, Velocity: %.2f, Channel: %d\n",
                event.noteOn.pitch,
                event.noteOn.velocity,
                event.noteOn.channel);
     }
-    else if (event.type == Event::kNoteOffEvent)
+    else if (event.type == Vst::Event::kNoteOffEvent)
     {
         printf("MIDI Note OFF - Note: %d, Velocity: %.2f, Channel: %d\n",
                event.noteOff.pitch,
@@ -70,7 +70,7 @@ tresult PLUGIN_API MidiNoteDisplayProcessor::process(ProcessData& data)
         int32 numEvents = data.inputEvents->getEventCount();
         for (int32 i = 0; i < numEvents; i++)
         {
-            Event event;
+            Vst::Event event;
             if (data.inputEvents->getEvent(i, event) == kResultOk)
             {
                 processMidiEvent(event);

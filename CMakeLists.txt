@@ -1,11 +1,17 @@
 cmake_minimum_required(VERSION 3.14.0)
 
-project(MidiNoteDisplay)
+project(MidiNoteDisplay VERSION 1.0.0)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# Disable VSTGUI and examples since we don't need them for this simple plugin
+set(SMTG_ENABLE_VSTGUI_SUPPORT OFF CACHE BOOL "Disable VSTGUI Support" FORCE)
+set(SMTG_ENABLE_VST3_PLUGIN_EXAMPLES OFF CACHE BOOL "Disable VST3 Plugin Examples" FORCE)
+set(SMTG_ENABLE_VST3_HOSTING_EXAMPLES OFF CACHE BOOL "Disable VST3 Hosting Examples" FORCE)
+
 # Add the VST3 SDK
 add_subdirectory(vst3sdk)
+smtg_enable_vst3_sdk()
 
 # Define the target
 set(target MidiNoteDisplay)

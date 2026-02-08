@@ -33,12 +33,12 @@ git submodule update --init --recursive
 ```bash
 mkdir build
 cd build
-cmake ..
+cmake .. -DCMAKE_BUILD_TYPE=Release
 ```
 
 3. Build the plugin:
 ```bash
-cmake --build . --config Release
+cmake --build .
 ```
 
 ### Platform-Specific Notes

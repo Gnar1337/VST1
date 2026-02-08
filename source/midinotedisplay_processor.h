@@ -1,6 +1,7 @@
 #pragma once
 
 #include "public.sdk/source/vst/vstaudioeffect.h"
+#include "pluginterfaces/vst/ivstevents.h"
 
 namespace Steinberg {
 namespace Vst {
@@ -25,7 +26,7 @@ public:
     tresult PLUGIN_API getState(IBStream* state) SMTG_OVERRIDE;
 
 protected:
-    void processMidiEvent(const Event& event);
+    void processMidiEvent(const Vst::Event& event);
 };
 
 } // namespace MidiNoteDisplay
